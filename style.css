@@ -1,0 +1,358 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#e6f5e8;
+    height:100vh;
+}
+.interface{
+    max-width:1280px;
+    margin:0 auto;
+}
+h2.titulo {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 40px;
+    color: #70c0b4;
+}
+
+.flex{
+    display: flex;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #98ffe7;
+    transform: scale(1.05);
+}
+
+/* CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a {
+    display:inline-block;
+    text-decoration: none;
+    color: #ce9c52;
+    transition:1.0s;
+}
+
+header nav ul {
+list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+    }
+    .btn-contato button{
+        padding: 7px 25px;
+        font-size:18px;
+        background-color:#8cbfb3;
+        border: none;
+        color: #fff;
+        font-weight: 500;
+        cursor:pointer;
+        border-radius: 30px;
+    }
+
+
+  
+
+/* TOPO DO SITE */
+section.topo-do-site .interface .img-topo-site img{
+    width: 400px;
+    
+}
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+section.topo-do-site img{
+    size-adjust: 10px;
+}
+
+.topo-do-site .txt-topo-site h1 {
+color: black;
+font-size: 42px;
+
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #70c0b4;
+    font-size: 42px;
+    
+    }
+
+    .topo-do-site .txt-topo-site p{
+        color: #ce9c52;
+        font-size: 20px;
+        margin: 35px 0;
+    }
+.img-topo-site img {
+position:relative;
+animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{top:0px;} 100% {top:30px;}
+}
+
+/* ESPECIALIDADES */
+
+section.especialidades{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #70c0b42b;
+}
+section.especialidades .flex{
+    gap: 10px;
+}
+.especialidades .especialidades-box{
+    padding: 40px;
+    text-align: center;
+    margin:30px;
+    border: 0;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.especialidades .especialidades-box:hover{
+transform: scale(1.05);
+box-shadow: 0 0 20px #70c0b4b7;;
+}
+
+.especialidades .especialidades-box h3{
+    color:#70c0b4;
+    font-size: 20px;
+    margin:15px 0;
+}
+.especialidades .especialidades-box i{
+    font-size:  70px;
+    color:#70c0b4;
+}
+
+/* SOBRE */
+
+section.sobre {
+    padding: 4%;
+    padding-top:60px;
+}
+
+section.topo-do-site  .flex{
+    align-items: center;
+    gap:60px;
+}
+
+section.topo-do-site .txt-sobre{
+    color:#70c0b4;
+    font-size: 40px;  
+    
+}
+
+.section.topo-do-site .txt-sobre h2{
+    font-size:40px;
+    line-height: 40px;
+    margin-bottom: 30px;  
+    color:#70c0b4;
+}
+
+section.topo-do-site .txt-sobre h2 span{
+    color:#70c0b4;
+    display:block;
+}
+section.topo-do-site .txt-sobre p{
+    text-align: justify;
+    color: black;
+}
+
+section.topo-do-site .txt-sobre .btn-social button{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border:none;
+background-color: #70c0b4;
+font-size: 20px;
+cursor: pointer;
+margin: 0 6px;
+transition: 1s;
+}
+
+/* PORTFÓLIO */
+
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #70c0b42b;
+}
+
+section.portfolio .flex{
+   justify-content: space-around;
+}
+
+.img-port{
+    width:360px;
+    height: 560px;
+    background-color:#70c0b4;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 6s;
+    cursor:pointer;
+    border-radius: 40px;
+    position:relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background-color: #1629263e;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 400;
+    color:#fff;
+    opacity: 0;
+    transition:(1)
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 1250px){
+/*cabeçalho*/
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+/*classes gerais*/
+.flex {
+    flex-direction: column;
+}
+section.topo-do-site{
+    margin-top: 0px;    
+    padding: 0px 6%;
+}
+
+section.topo-do-site .interface .img-topo-site img{
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.interface .logo{
+    display:none;
+}
+
+section.portfolio .flex .img-port {
+    margin-top: 40px;
+}
+
+}
+
+/*GALERIA*/
+
+.container {
+    width: 90%;
+    margin: 2rem auto; 
+  }
+  
+  .gallery {
+    display: flexbox;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem; 
+  }
+  
+  .gallery__img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    display: inl; 
+    align-items: center;
+  }
+  
+  .gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  
+    /** Sintaxe alternativa **/
+    /* grid-column: 1 / span 2;  */
+    /* grid-row: 1 / span 2; */
+  }
+  
+  .gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  
+    /** Sintaxe alternativa **/
+    /* grid-column: 3 / span 2;  */
+    /* grid-row: 1 / span 2; */
+  }
+  
+  .gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+  
+    /** Sintaxe alternativa **/
+    /* grid-column: 5 / span 4;
+    grid-row: 1 / span 5; */
+  }
+  
+  .gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  
+    /** Sintaxe alternativa **/
+    /* grid-column: 1 / span 4;  */
+    /* grid-row: 3 / span 3; */
+  }
+  
+  .gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+  
+    /** Sintaxe alternativa **/
+    /* grid-column: 1 / span 4; */
+    /* grid-row: 6 / span 3; */
+  }
+  
+  .gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+  
+    /** Sintaxe alternativa **/
+    /* grid-column: 5 / span 4; */
+    /* grid-row: 6 / span 3; */
+  }
